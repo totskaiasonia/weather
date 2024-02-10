@@ -1,5 +1,6 @@
 body {
     background: #eee;
+    font-family: Arial,Helvetica,sans-serif;
 }
 p {
     margin: 0;
@@ -15,7 +16,7 @@ p {
 }
 
 .logo-btn {
-    width: 100px;
+    width: 152px;
     background: none;
     border: none;
 }
@@ -60,6 +61,7 @@ p {
     justify-content: space-between;
     border-radius: 10px;
     padding: 10px;
+    align-self: flex-start;
 }
 .tab-info {
     width: 60%;
@@ -92,16 +94,217 @@ p {
 .tab-info-values-wrapper {
     display: flex;
     justify-content: center;
-    
+    height: 78px;
 }
 
 .tab-info-min {
     background: #e1f5c2;
     width: 50%;
     height: 30px;
+    align-self: flex-end;
 }
 .tab-info-max {
     background: #95e457;
     width: 50%;
     height: 30px;
+    align-self: center;
+}
+
+.logo-search-wrapper {
+    display: flex;
+}
+.search-input {
+    height: 20px;
+    align-self: center;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.active {
+    height: 120px;
+    border-radius: 10px 10px 0 0;
+}
+
+.main-info {
+    background: white;
+    padding: 20px 0 0;
+    text-align: center;
+    border-radius: 10px
+}
+
+.main-info-item {
+    display: flex;
+}
+.main-info-item > div {
+    width: calc(100%/8);
+}
+
+.main-info img {
+    width: 90%;
+    height: 65px;
+    margin-top: 10px;
+}
+
+.main-info-subtitle {
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.item-degree {
+    height: 80px;
+}
+.main-info-item-degree {
+    background-color: rgba(200, 240, 255, 1);
+    align-self: flex-start;
+    padding: 8px 0
+}
+.main-info-item-degree:nth-child(1) {
+    margin-top: 40px;
+}
+.main-info-item-degree:nth-child(2) {
+    margin-top: 40px;
+}
+.main-info-item-degree:nth-child(3) {
+    margin-top: 40px;
+}
+.main-info-item-degree:nth-child(4) {
+    margin-top: 35px;
+    background: rgba(200, 239, 167, 1);
+}
+.main-info-item-degree:nth-child(5) {
+    margin-top: 35px;
+    background: rgba(200, 239, 167, 1);
+}
+.main-info-item-degree:nth-child(6) {
+    margin-top: 25px;
+    background: rgba(200, 239, 167, 1);
+}
+.main-info-item-degree:nth-child(7) {
+    margin-top: 20px;
+    background: rgba(178, 234, 133, 1);
+}
+.main-info-item-degree:nth-child(8) {
+    margin-top: 15px;
+    background: rgba(168, 231, 116, 1);
+}
+
+.main-info-item-wind {
+    background: rgba(235, 236, 237, 1);
+    margin-right: 10px;
+    padding: 10px;
+}
+.empty {
+    color: gray;
+    background: transparent;
+}
+
+.main-info-item-rain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-info-item-rain-mm {
+    margin: 3px 0;
+}
+
+
+.main-info-item-rain-img {
+    position: relative;
+    background: #149aff;
+    opacity: 0.4;
+    height: 12px;
+    width: 100%;
+}
+.main-info-item-rain-img::after {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='5'%3E%3Cpath fill='%23149aff' fill-rule='evenodd' d='M0 1.004s8.245.928 18.75 1c5.825.04 11.794-.108 18.75-1 6.883-.882 12.966-1.033 18.75-1 10.601.062 18.75 1 18.75 1V5H0V1.004Z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-size: cover;
+    content: "";
+    height: 5px;
+    left: 0;
+    position: absolute;
+    top: -4px;
+    width: 100%;
+}
+
+.sun-moon-wrapper {
+    width: 720px;
+    background: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.section-title {
+    text-align: center;
+    margin: 0 0 10px;
+    border-bottom: 1px solid rgb(231, 230, 230);
+    padding-bottom: 10px;
+}
+
+.sun-moon-info-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.sun-moon-info-wrapper > div {
+    width: 47%;
+}
+.sun-moon-info-wrapper > div > p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+.sun-moon-info-item {
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+.sun-moon-info-item p {
+    margin-bottom: 10px;
+}
+.sun-subtitle {
+    color: #c6a004;
+}
+.moon-subtitle {
+    color: #587fa7
+}
+.sun-moon-info-item img {
+    width: 30%;
+    background: rgb(228, 228, 228);
+    margin-right: 10px;
+}
+
+
+
+.cities-wrapper {
+    width: 720px;
+    background: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cities-wrapper > p {
+    width: 25%;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #545454;
+}
+
+.footer {
+    border-top: 1px solid rgb(218, 218, 218);
+    margin-top: 20px;
+    height: 100px;
+}
+.footer p {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 30px;
+    color: #999;
 }
